@@ -173,9 +173,9 @@ export class AuthController {
             },
         },
     })
-    @Delete('/delete-account')
+    @Delete('/delete-account/:userId')
     async deleteAccount(req: CustomRequest, res: Res) {
-        const ticketId = req.params.ticketId;
+        const userId = req.params.userId;
         // HTTP handler logic
     }
 }
@@ -185,7 +185,7 @@ Use the `generateOpenApiDocs` function to generate the OpenAPI specification.
 
 ```typescript
 import { generateOpenApiDocs } from 'openapi-express-decorators';
-import { AuthController } from './controllers/wishlist.controller';
+import { AuthController } from './controllers/auth.controller';
 import { RegisterUserSchema } from './schemas';
 
 // controllers that you have your open api routes

@@ -7,7 +7,14 @@
     "build": "tsc",
     "prepublish": "npm run build"
   },
-  "keywords": ["openapi", "express", "swagger", "express docs", "express decorators", "swagger decorators"],
+  "keywords": [
+    "openapi",
+    "express",
+    "swagger",
+    "express docs",
+    "express decorators",
+    "swagger decorators"
+  ],
   "author": "Jonace Mpelule <me@jonacempelule.com>",
   "license": "MIT",
   "description": "A lightweight, type-safe library for generating OpenAPI documentation using decorators in Express.js applications.",
